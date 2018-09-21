@@ -1,4 +1,5 @@
 <template>
+<view>
   <Tips />
   <view class="container">
     <view class="h-gap"></view>
@@ -55,6 +56,7 @@
     <!--操作栏-->
     <ActionBar @tap.user="submit" okText="提交申请"/>
   </view>
+</view>
 </template>
 <script>
   import wepy from 'wepy';

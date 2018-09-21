@@ -1,4 +1,5 @@
 <template>
+<view>
   <view class="address-box row">
     <!--左侧图标-->
     <view class="icon-box">
@@ -16,6 +17,7 @@
     </view>
   </view>
   <image class="address-box-hr" src="http://img.leshare.shop/shop/other/address-hr.png" />
+</view>
 </template>
 
 <script>

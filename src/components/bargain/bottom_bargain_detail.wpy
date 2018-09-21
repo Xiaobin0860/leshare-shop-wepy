@@ -1,4 +1,5 @@
 <template>
+<view>
   <view class="buy-bar-placeholder">
   </view>
   <view class="row group-bar-box">
@@ -12,6 +13,7 @@
       <text>立即购买</text>
     </view>
   </view>
+</view>
 </template>
 
 <script>

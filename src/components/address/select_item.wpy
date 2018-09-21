@@ -1,4 +1,5 @@
 <template>
+<view>
   <view class="address-item-box row-between" @tap="select">
 
     <!-- 占位空间 -->
@@ -29,6 +30,7 @@
     <icon class="more normal" />
   </view>
   <image class="hr" src="http://img.leshare.shop/shop/other/address-hr.png" />
+</view>
 </template>
 
 <script>

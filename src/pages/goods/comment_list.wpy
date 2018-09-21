@@ -1,4 +1,5 @@
 <template>
+<view>
   <view class="container" wx:if="{{init}}">
     <!--TAB 页-->
     <ZanTab :tab.sync="tab" @change.user="switchTab" />
@@ -14,6 +15,7 @@
 
   <!--占位符-->
   <Placeholder :show.sync="isPageEmpty" message="您还没有商品评价"/>
+</view>
 </template>
 
 <script>

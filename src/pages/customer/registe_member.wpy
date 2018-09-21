@@ -1,4 +1,5 @@
 <template>
+<view>
   <Tips/>
   <Loading :init.sync="init"/>
   <view class="mt20"></view>
@@ -45,7 +46,7 @@
       </view>
     </form>
   </view>
-
+</view>
 </template>
 <script>
   import wepy from 'wepy';

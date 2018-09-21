@@ -1,4 +1,5 @@
 <template>
+<view>
   <Loading :init.sync="init"/>
   <view wx:if="{{init}}">
     <view class="container user-box">
@@ -79,6 +80,7 @@
     </view>
 
   </view>
+</view>
 </template>
 
 <script>

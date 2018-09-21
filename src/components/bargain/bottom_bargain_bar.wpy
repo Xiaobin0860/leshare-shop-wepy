@@ -1,4 +1,5 @@
 <template>
+<view>
   <view class="buy-bar-placeholder">
   </view>
   <view class="row group-bar-box">
@@ -19,6 +20,7 @@
       <text>发起砍价</text>
     </view>
   </view>
+</view>
 </template>
 
 <script>

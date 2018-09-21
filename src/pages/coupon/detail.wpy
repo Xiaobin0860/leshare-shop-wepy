@@ -1,4 +1,5 @@
 <template>
+<view>
   <Tips />
   <view wx:if="{{init}}">
     <CouponItem :coupon.sync="coupon" />
@@ -15,10 +16,10 @@
 
     <view class="btn-panel" wx:if="{{!success}}">
       <button class="weui-btn" type="primary"  @tap="check" wx:if="{{coupon.isSelfUse}}">自助核销</button>
-      <button class="weui-btn" type="warn" plain @tap="delete">删除优惠券</button>
+      <button class="weui-btn" type="warn" plain @tap="del">删除优惠券</button>
     </view>
   </view>
-
+</view>
 </template>
 
 <script>
@@ -83,7 +84,7 @@
           Tips.loaded();
         }
       },
-      async delete() {
+      async del() {
         await Tips.confirm('确认删除该优惠券?');
         Tips.loading('删除中');
         await coupon.remove(this.coupon.id);

@@ -1,4 +1,5 @@
 <template>
+<view>
   <Loading :init.sync="init"/>
 
   <view class="column group-info-box">
@@ -11,6 +12,7 @@
   <block>
     <SilderPanel />
   </block>
+</view>
 </template>
 
 <script>

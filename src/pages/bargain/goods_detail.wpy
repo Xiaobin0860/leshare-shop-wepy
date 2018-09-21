@@ -1,4 +1,5 @@
 <template>
+<view>
   <Loading :init.sync="init"/>
 
   <!--轮播展示图-->
@@ -34,6 +35,7 @@
     <!--底栏-->
     <BargainBar :rule.sync="rule" />
   </view>
+</view>
 </template>
 <script>
   import wepy from 'wepy';

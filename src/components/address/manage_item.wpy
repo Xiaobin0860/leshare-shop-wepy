@@ -22,7 +22,7 @@
         <view class="address-opt-action"  @tap="edit({{address.id}})">
           <icon class="edit" color="gray"/><text>编辑</text>
         </view>
-        <view class="address-opt-action"  @tap="delete({{address.id}})">
+        <view class="address-opt-action"  @tap="del({{address.id}})">
           <icon class="delete" color="gray" /><text>删除</text>
         </view>
       </view>
@@ -63,7 +63,7 @@
         await Tips.success('操作成功');
         Event.emit(Event.ADDRESS_LIST_UPDATE);
       },
-      async delete(id) {
+      async del(id) {
         await Tips.confirm('确定删除该地址？');
         Tips.loading();
         await address.remove(id);

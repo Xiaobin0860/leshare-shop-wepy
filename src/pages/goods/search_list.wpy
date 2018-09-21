@@ -1,4 +1,5 @@
 <template>
+<view>
   <Loading :init.sync="init"/>
 
   <view wx:if="{{init}}">
@@ -21,6 +22,7 @@
     <!--悬浮购物车-->
     <FloatCart />
   </view>
+</view>
 </template>
 
 <script>

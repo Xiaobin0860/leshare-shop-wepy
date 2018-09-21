@@ -1,4 +1,5 @@
 <template>
+<view>
   <!--商品基本信息展示-->
   <view class="row-between goods-msg-box">
     <view class="column">
@@ -35,6 +36,7 @@
     </view>
     <icon class="more xsmall" color="gray"/>
   </view>
+</view>
 </template>
 
 <script>

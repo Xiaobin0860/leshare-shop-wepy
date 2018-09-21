@@ -1,4 +1,5 @@
 <template>
+<view>
   <Tips/>
   <view class="container" wx:if="{{init}}">
 
@@ -41,7 +42,7 @@
       </view>
     </view>
   </view>
-
+</view>
 </template>
 
 <script>

@@ -1,4 +1,5 @@
 <template>
+<view>
   <Loading :init.sync="init"/>
   <view class="template-box column" wx:if="{{init}}">
 
@@ -51,6 +52,7 @@
     <repeat for="{{plugins}}" key="index" index="index" item="item">
     </repeat>
   </view>
+</view>
 </template>
 
 <script>

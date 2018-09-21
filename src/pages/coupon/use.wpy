@@ -1,4 +1,5 @@
 <template>
+<view>
   <view class="container" wx:if="{{init}}">
 
     <!--列表展现-->
@@ -14,6 +15,7 @@
 
   <!--占位符-->
   <Placeholder :show.sync="isPageEmpty" message="您还没有可用优惠券"/>
+</view>
 </template>
 
 <script>

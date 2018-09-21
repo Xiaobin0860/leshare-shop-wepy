@@ -1,4 +1,5 @@
 <template>
+<view>
   <view class="score-item-box" wx:for="{{scores}}" wx:key="index" wx:for-item="goods" wx:for-index="index">
     <view class="socre-header">
       <image class="goods-img" src='{{goods.preview}}'></image>
@@ -17,7 +18,7 @@
   <view class="btn-panel">
     <button class="weui-btn" type="primary" @tap="confirm">提交评价</button>
   </view>
-
+</view>
 </template>
 <script>
   import wepy from 'wepy';
